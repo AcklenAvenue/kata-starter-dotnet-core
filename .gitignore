@@ -1,0 +1,12 @@
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+
+#Tooling
+_ReSharper*/
+*.resharper
+*.DotSettings
+*.DotSettings.*
+[Tt]est[Rr]esult*
+.idea/
