@@ -5,4 +5,19 @@
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Compile Remove="SupplyChain\**" />
+      <Compile Remove="StringCalculator\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="SupplyChain\**" />
+      <EmbeddedResource Remove="StringCalculator\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="SupplyChain\**" />
+      <None Remove="StringCalculator\**" />
+    </ItemGroup>
+
 </Project>

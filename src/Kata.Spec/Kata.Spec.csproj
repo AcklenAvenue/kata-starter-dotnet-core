@@ -16,4 +16,16 @@
       <ProjectReference Include="..\Kata\Kata.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="StringCalculator\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="StringCalculator\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="StringCalculator\**" />
+    </ItemGroup>
+
 </Project>

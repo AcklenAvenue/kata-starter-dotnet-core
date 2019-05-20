@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using Kata.StringCalculator;
 using Machine.Specifications;
 
 namespace Kata.Spec
