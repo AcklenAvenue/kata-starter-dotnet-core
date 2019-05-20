@@ -1,21 +1,18 @@
-﻿using System;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Machine.Specifications;
 
 namespace Kata.Spec
 {
-    public class when_adding_two_numbers
+    [Subject("when adding numbers together")]
+    public class when_user_input_is_empty
     {
-        static int _sut;
+        static Calculator _sut;
+        static int _result;
 
-        Establish context = () => { 
-            _sut = 1;
-        };
-        
-        Because action = () => {            
-            _sut = _sut+1; 
-        };
+        Establish context = () => _sut = new Calculator();
 
-        It should_return_the_sum = () => _sut.Should().Be(2);
+        Because of = () => _result = _sut.Add("");
+
+        It should_return_the_sum = () => _result.Should().Be(0);
     }
 }
