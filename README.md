@@ -12,9 +12,11 @@ Before the pairing session, we need you to do a few things:
 
 2) Install Dotnet SDK 2.2 or higher
 
-3) Clone this repo (https://github.com/AcklenAvenue/kata-starter-dotnet-core)
+3) In Rider, install the plugin "Machine Specifications Runner for Rider" (File > Settings > Plugins)
 
-4) Make sure everything compiles and the unit tests run.
+4) Clone this repo (https://github.com/AcklenAvenue/kata-starter-dotnet-core)
+
+5) Make sure everything compiles and the unit tests run.
 
 ### Prepare Your Mind
 
