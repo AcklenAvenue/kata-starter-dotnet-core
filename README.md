@@ -14,9 +14,11 @@ Before the pairing session, we need you to do a few things:
 
 3) In Rider, install the plugin "Machine Specifications Runner for Rider" (File > Settings > Plugins)
 
-4) Clone this repo (https://github.com/AcklenAvenue/kata-starter-dotnet-core)
+4) Fork this repo (https://github.com/AcklenAvenue/kata-starter-dotnet-core) to your own account
 
 5) Make sure everything compiles and the unit tests run.
+
+6) Add you pair interviewer's github username as a collaborator to your repository so he/she can push commits to it during the pairing session.
 
 ### Prepare Your Mind
 
