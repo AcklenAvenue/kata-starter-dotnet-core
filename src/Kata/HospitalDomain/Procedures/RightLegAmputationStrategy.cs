@@ -2,7 +2,7 @@ using Kata.HospitalDomain.Outcomes;
 using Kata.HospitalDomain.Things;
 using Kata.HospitalDomain.Values;
 
-namespace Kata.HospitalDomain
+namespace Kata.HospitalDomain.Procedures
 {
     public class RightLegAmputationStrategy : IProcedureStrategy
     {

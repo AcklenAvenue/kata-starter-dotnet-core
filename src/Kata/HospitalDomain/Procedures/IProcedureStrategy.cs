@@ -1,6 +1,6 @@
 using Kata.HospitalDomain.Outcomes;
 
-namespace Kata.HospitalDomain
+namespace Kata.HospitalDomain.Procedures
 {
     public interface IProcedureStrategy
     {

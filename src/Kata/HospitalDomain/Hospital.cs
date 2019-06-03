@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Kata.HospitalDomain.Outcomes;
+using Kata.HospitalDomain.Procedures;
+using Kata.HospitalDomain.Scheduling;
 
 namespace Kata.HospitalDomain
 {
@@ -26,6 +28,13 @@ namespace Kata.HospitalDomain
                 .First(x => x.CanDoProcedure(medicalCode, isEmergency))
                 .DoProcedure(outcome);
             return outcome;
+        }
+
+        public Appointment ScheduleProcedure(string medicalCode)
+        {
+            //how will we create this appointment?
+            
+            return new Appointment();
         }
     }
 }
