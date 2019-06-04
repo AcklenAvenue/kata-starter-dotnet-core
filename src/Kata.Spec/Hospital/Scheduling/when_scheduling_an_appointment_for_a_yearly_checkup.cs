@@ -6,12 +6,14 @@ using Kata.HospitalDomain.Rooms;
 using Kata.HospitalDomain.Scheduling;
 using Kata.HospitalDomain.Staff;
 using Machine.Specifications;
+using Moq;
+using It = Machine.Specifications.It;
 
 namespace Kata.Spec.Hospital.Scheduling
 {
     public class when_scheduling_an_appointment_for_a_yearly_checkup
     {
-        Establish _context = () => { _systemUnderTest = new HospitalDomain.Hospital(); };
+        Establish _context = () => { _systemUnderTest = new HospitalDomain.Hospital(Mock.Of<IProcedureStrategyFactory>()); };
 
         Because of = () => { _result = _systemUnderTest.ScheduleProcedure("7456"); };
 

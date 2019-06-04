@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Kata.HospitalDomain.Outcomes;
 using Kata.HospitalDomain.Things;
 using Kata.HospitalDomain.Values;
@@ -17,11 +18,14 @@ namespace Kata.HospitalDomain.Procedures
             _painKiller = new PainKiller();
 
         }
-        public void DoProcedure(TreatmentOutcome outcome)
+        public IEnumerable<ProcedureOutcome> DoProcedure()
         {
-            outcome.LogProcedure(_painKiller.ApplyGeneralAnesthetic());
-            outcome.LogProcedure(_boneSaw.CutOff(BodyArea.RightLeg));
-            outcome.LogProcedure(_injector.Inject(Medicine.Amoxicillin, BodyArea.RightLeg));
+            return new List<ProcedureOutcome>
+            {
+                _painKiller.ApplyGeneralAnesthetic(),
+                _boneSaw.CutOff(BodyArea.RightLeg),
+                _injector.Inject(Medicine.Amoxicillin, BodyArea.RightLeg)
+            };
         }
 
         public bool CanDoProcedure(string medicalCode, bool isEmergency = false)

@@ -1,11 +1,13 @@
 using Kata.HospitalDomain.Outcomes;
 using Machine.Specifications;
+using Moq;
+using It = Machine.Specifications.It;
 
-namespace Kata.Spec.Hospital
+namespace Kata.Spec.Hospital.Treatments
 {
     public class when_treating_dead_arm_emergency
     {
-        Establish _context = () => { _systemUnderTest = new HospitalDomain.Hospital(); };
+        Establish _context = () => { _systemUnderTest = new HospitalDomain.Hospital(Mock.Of<IProcedureStrategyFactory>()); };
 
         Because of = () => { _result = _systemUnderTest.TreatIllness("8372", true); };
 

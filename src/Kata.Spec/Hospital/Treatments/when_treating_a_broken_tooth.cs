@@ -1,14 +1,15 @@
-using System.Linq;
-using Kata.HospitalDomain;
+using System.Collections.Generic;
 using Kata.HospitalDomain.Outcomes;
 using Kata.HospitalDomain.Procedures;
 using Machine.Specifications;
+using Moq;
+using It = Machine.Specifications.It;
 
-namespace Kata.Spec.Hospital
+namespace Kata.Spec.Hospital.Treatments
 {
     public class when_treating_a_broken_tooth
     {
-        Establish _context = () => { _systemUnderTest = new HospitalDomain.Hospital(); };
+        Establish _context = () => { _systemUnderTest = new HospitalDomain.Hospital(Mock.Of<IProcedureStrategyFactory>()); };
 
         Because of = () => { _result = _systemUnderTest.TreatIllness("1292"); };
 
@@ -27,7 +28,7 @@ namespace Kata.Spec.Hospital
         Because of = () =>
         {
             _treatmentOutcome = new TreatmentOutcome();
-            _systemUnderTest.DoProcedure(_treatmentOutcome);
+            _result = _systemUnderTest.DoProcedure();
         };
 
         It should_pull_the_tooth = () => { _treatmentOutcome.ShouldHave("Pulled tooth number 20."); };
@@ -36,5 +37,6 @@ namespace Kata.Spec.Hospital
 
         static ToothPullStrategy _systemUnderTest;
         static TreatmentOutcome _treatmentOutcome;
+        static IEnumerable<ProcedureOutcome> _result;
     }
 }

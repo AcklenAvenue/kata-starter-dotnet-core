@@ -2,7 +2,7 @@ using FluentAssertions;
 using Kata.HospitalDomain.Procedures;
 using Machine.Specifications;
 
-namespace Kata.Spec.Hospital
+namespace Kata.Spec.Hospital.Treatments
 {
     public class when_deciding_if_tooth_pull_is_right
     {
@@ -11,7 +11,7 @@ namespace Kata.Spec.Hospital
         Because of = () => { _result = _systemUnderTest.CanDoProcedure("1292", false); };
 
         It should_be_able_to_do_the_procedure = () => { _result.Should().BeTrue(); };
-        
+
         static ToothPullStrategy _systemUnderTest;
         static bool _result;
     }

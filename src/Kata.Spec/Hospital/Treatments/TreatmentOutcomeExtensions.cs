@@ -2,7 +2,7 @@ using System.Linq;
 using FluentAssertions;
 using Kata.HospitalDomain.Outcomes;
 
-namespace Kata.Spec.Hospital
+namespace Kata.Spec.Hospital.Treatments
 {
     public static class TreatmentOutcomeExtensions
     {
