@@ -8,6 +8,7 @@ https://osherove.com/tdd-kata-1
 * All new specs must fail for the right reasons before making them pass
 * Verbalize thoughts and code
 * Follow the process strictly
+* No copy/pasta
 
 ### Process:
 1. Write spec
