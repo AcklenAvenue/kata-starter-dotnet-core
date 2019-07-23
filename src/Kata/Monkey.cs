@@ -5,7 +5,12 @@ namespace Kata
 {
     public class Monkey
     {
-        IList<string> Belly { get; }
+        public Monkey()
+        {
+            Belly = new List<string>();
+        }
+
+        public IList<string> Belly { get; }
 
         public void Eat(string food)
         {
