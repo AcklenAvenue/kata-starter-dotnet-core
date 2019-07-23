@@ -5,14 +5,14 @@ namespace Kata.Spec.when_calculating_the_sum
 {
     public class when_the_user_input_is_empty
     {
-        static Calculator _systemUnderTest;
+        static Monkey _systemUnderTest;
         static int _result;
 
         Establish context = () => 
-            _systemUnderTest = new Calculator();
+            _systemUnderTest = new Monkey();
 
         Because of = () => 
-            _result = _systemUnderTest.Add("");
+            _result = _systemUnderTest.Eat("");
 
         It should_return_zero = () => 
             _result.Should().Be(0);
