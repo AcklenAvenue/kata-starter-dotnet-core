@@ -16,8 +16,4 @@
       <ProjectReference Include="..\Kata\Kata.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="when_calculating_the_sum" />
-    </ItemGroup>
-
 </Project>
