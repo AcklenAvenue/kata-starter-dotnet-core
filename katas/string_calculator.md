@@ -30,3 +30,45 @@ https://osherove.com/tdd-kata-1
 10. Given the user input is multiple numbers with a custom multi-character delimiter when calculating the sum then it should return the sum of all the numbers. (example: “//[***]\n1***2***3” should return 6)
 11. Given the user input is multiple numbers with multiple custom delimiters when calculating the sum then it should return the sum of all the numbers. (example “//[*][%]\n1*2%3” should return 6)
 
+### Technique and Form
+What do we want people to learn from the practice of this kata?
+
+* Test-Driven Development
+  * Plain English spec/observation naming
+  * Top-down, right to left spec implementation 
+  * Defining classes, methods and new specs from the current spec
+  * Modified Red-Green-Refactor (Red-Green-Red-Green-Red-Green-Red-Green-Red-Green-REFACTOR)
+  * No automatically green specs
+  * Failing for the right reason (explaining code path to failure)
+* Pair Programming
+  * Conversational coding
+  * Ping pong pair programming pattern (p5)
+* Mastery of Tools
+  * Git SCM (Terminal)
+    * Good commit messages
+    * Push
+    * Pull
+    * Add
+    * Commit
+  * Jetbrains Rider 
+    * Automatically run specs on build
+    * Panels and sub-windows don’t require excessive navigation/mousing
+    * Refactorings/Keyboard shortcuts
+      * Limited mouse use
+      * Create type 
+      * Define field (type inference)
+      * Move to folder
+      * Navigate to failures
+      * Basic editor navigation
+      * Build
+      * Run specs
+      * Create variable after working out the value
+      * Alt enter
+  * Dotnet/C#
+    * Default argument values
+    * Basic string parsing
+    * Extension methods
+      * Select
+      * Sum
+    * Functional string/collection manipulation
+    * Array vs IEnumerable
