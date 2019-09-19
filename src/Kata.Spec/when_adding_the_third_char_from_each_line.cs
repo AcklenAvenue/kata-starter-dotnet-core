@@ -3,16 +3,14 @@ using Machine.Specifications;
 
 namespace Kata.Spec
 {
-    public class when_adding_the_third_char_from_each_line
+    public class when_user_input_is_empty
     {
-        Establish _context = () => { _systemUnderTest = new TestClass(); };
+        Establish _context = () => { _systemUnderTest = new Calculator(); };
 
-        Because of = () => 
-            _result = _systemUnderTest.GetSumOfThirdCharacter("123\n9d3492127\nkk2kwkgkykl1\n19328783");
+        Because of = () => { _result = _systemUnderTest.Add(); };
 
-        It should_return_the_sum_of_the_third_characters = () => { _result.Should().Be(11); };
-        
-        static TestClass _systemUnderTest;
+        It should_return_zero = () => { _result.Should().Be(0); };
+        static Calculator _systemUnderTest;
         static int _result;
     }
 }
