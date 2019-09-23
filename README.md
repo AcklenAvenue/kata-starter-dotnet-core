@@ -6,7 +6,7 @@ Your pair interview will be conducted in .NET Core and C#. If you're not experie
 
 Before the pairing session, we need you to do a few things:
 
-### Install Stuff
+### Prepare Your Machine
 
 1) Install the latest version of Jetbrains Rider (free evaluation).
 
@@ -14,7 +14,7 @@ Before the pairing session, we need you to do a few things:
 
 3) In Rider, install the plugin "Machine Specifications Runner for Rider" (File > Settings > Plugins)
 
-4) Clone this repo (https://github.com/AcklenAvenue/kata-starter-dotnet-core)
+4) Fork this repo, add your interviewer's github account as a collaborator, and send the link to your forked repo.
 
 5) Make sure everything compiles and the unit tests run.
 
