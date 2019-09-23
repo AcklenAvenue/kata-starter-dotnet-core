@@ -9,6 +9,7 @@ https://osherove.com/tdd-kata-1
 * Verbalize thoughts and code
 * Follow the process strictly
 * No copy/pasta
+* No Regex
 
 ### Process:
 1. Write spec
