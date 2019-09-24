@@ -1,0 +1,17 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && cucumber-js features/ --tags=@wip"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/cucumber": "^4.0.7",
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0"
+  }
+}
