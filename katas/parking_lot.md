@@ -15,104 +15,104 @@ We have a new "smart lot" parking lot. Our parking lot can host many types of ve
 
 ## Specs
 
-1. Normal Car, Plenty of Space, $5
+ Scenario: Normal Car, Plenty of Space, $5
+ ```
+    Given a parking lot with 50 spaces
+    And a normal car
+    When the vehicle stays for one day 
+    Then the driver is charged $5
+    And the lot is left with 49 spaces
 ```
-Given a parking lot with 50 spaces 
-and a normal car
-when the vehicle stays for one day
-then the driver is charged $5 
-and the lot is left with 49 spaces
+  Scenario: Normal Car, One Space Left
 ```
-2. Normal Car, One Space Left
+    Given a parking lot with 1 spaces
+    And a normal car
+    When the vehicle stays for one day
+    Then the driver is charged $5
+    And the lot is left with 0 spaces
+```  
+  Scenario: Normal Car, No Space
 ```
-Given a parking lot with 1 spaces 
-and a normal car
-when the vehicle stays for one day
-then the driver is charged $5 
-and the lot is left with 0 spaces
+    Given a parking lot with 0 spaces
+    And a normal car
+    When the vehicle attempts to enters the lot
+    Then the driver is charged $0
+    And the car is rejected
 ```
-3. Normal Car, No Space
+   Scenario: Electric Car, Plenty of Space, 50% discount
+ ```
+    Given a parking lot with 50 spaces
+    And an electric car
+    When the vehicle stays for one day
+    Then the driver is charged $2.50
+    And the lot is left with 49 spaces
+ ```
+  Scenario: Motocycle, Plenty of Space, 1/2 space
+ ```
+    Given a parking lot with 50 spaces
+    And a motorcycle
+    When the vehicle stays for one day
+    Then the driver is charged $3.00
+    And the lot is left with 49.5 spaces
+ ```
+  Scenario: Normal Car, Trump Sticker, Charge Double
+ ```
+    Given a parking lot with 50 spaces
+    And a normal car
+    And the car has a trump sticker
+    When the vehicle stays for one day
+    Then the driver is charged $10
+    And the lot is left with 49 spaces
 ```
-Given a parking lot with 0 spaces 
-and a normal car
-when the vehicle attempts to enters the lot
-then the driver is charged $0
-and the car is rejected
+ Scenario: Bus, Plenty of Space, 2 Spaces, $9
 ```
-4. Electric Car, Plenty of Space, 50% discount
+    Given a parking lot with 50 spaces
+    And a bus
+    When the vehicle stays for one day
+    Then the driver is charged $9.00
+    And the lot is left with 48 spaces
 ```
-Given a parking lot with 50 spaces 
-and an electric car
-when the vehicle stays for one day
-then the driver is charged $2.50 
-and the lot is left with 49 spaces
+  Scenario: Electric Bus, Plenty of Space, 50% discount
 ```
-5. Motocycle, Plenty of Space, 1/2 space
+    Given a parking lot with 50 spaces
+    And an electric bus
+    When the vehicle stays for one day
+    Then the driver is charged $4.50
+    And the lot is left with 48 spaces
 ```
-Given a parking lot with 50 spaces 
-and a motorcycle
-when the vehicle stays for one day
-then the driver is charged $3.00
-and the lot is left with 49.5 spaces
+  Scenario: Helicopter, Plenty of space, 8 Spaces, $35
 ```
-6. Normal Car, Trump Sticker, Charge Double
+    Given a parking lot with 50 spaces
+    And a helicopter
+    When the vehicle stays for one day
+    Then the driver is charged $35
+    And the lot is left with 42 spaces
 ```
-Given a parking lot with 50 spaces 
-and a normal car
-and the car has a trump sticker
-when the vehicle stays for one day
-then the driver is charged $10 
-and the lot is left with 49 spaces
+  Scenario: Helicopter, Plenty of space, 2 Days
 ```
-7. Bus, Plenty of Space, 2 Spaces, $9
+    Given a parking lot with 50 spaces
+    And a helicopter
+    When the vehicle stays for two days
+    Then the driver is charged $70
+    And the lot is left with 42 spaces
 ```
-Given a parking lot with 50 spaces 
-and a bus
-when the vehicle stays for one day
-then the driver is charged $9.00
-and the lot is left with 48 spaces
+  Scenario: 20% discount for 3 or more days
 ```
-8. Electric Bus, Plenty of Space, 50% discount
+    Given a parking lot with 50 spaces
+    And a bus
+    When the vehicle stays for four days
+    Then the driver is charged $28.80
+    And the lot is left with 48 spaces
 ```
-Given a parking lot with 50 spaces 
-and an electric bus
-when the vehicle stays for one day
-then the driver is charged $4.50
-and the lot is left with 48 spaces
+  Scenario: 30% discount for 6 days or more
 ```
-9. Helicopter, Plenty of space, 8 Spaces, $35
+    Given a parking lot with 50 spaces
+    And a normal car
+    When the vehicle stays for eight days
+    Then the driver is charged $28
+    And the lot is left with 49 spaces
 ```
-Given a parking lot with 50 spaces 
-and a helicopter
-when the vehicle stays for one day
-then the driver is charged $35
-and the lot is left with 42 spaces
-```
-10. Helicopter, Plenty of space, 2 Days
-```
-Given a parking lot with 50 spaces 
-and a helicopter
-when the vehicle stays for two days
-then the driver is charged $70
-and the lot is left with 42 spaces
-```
-11. 20% discount for 3 or more days
-```
-Given a parking lot with 50 spaces 
-and a bus
-when the vehicle stays for four days
-then the driver is charged $28.80
-and the lot is left with 48 spaces
-```
-12. 30% discount for 6 days or more
-```
-Given a parking lot with 50 spaces 
-and a normal car
-when the vehicle stays for eight days
-then the driver is charged $28 
-and the lot is left with 49 spaces
-```
-
+ 
 ## Techniques/Practices
 
 This is what you should be learning through this kata.
