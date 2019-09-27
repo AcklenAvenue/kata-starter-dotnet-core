@@ -8,14 +8,13 @@ const helpers_1 = require("./helpers");
 const Motorcycle_1 = require("../../Motorcycle");
 const Bus_1 = require("../../Bus");
 const Helicopter_1 = require("../../Helicopter");
-cucumber_1.Before(function () {
-    this.lot = false;
-    this.vehicle = false;
-    this.charged = false;
-    this.error = false;
-});
 cucumber_1.Given(/^a parking lot with (\d+) spaces$/, function (spaces) {
-    this.lot = new ParkingLot_1.ParkingLot(spaces);
+    const configs = new Map();
+    configs.set("Car", { spaces: 1, basePrice: 5 });
+    configs.set("Motorcycle", { spaces: .5, basePrice: 3 });
+    configs.set("Bus".toString(), { spaces: 2, basePrice: 9 });
+    configs.set("Helicopter".toString(), { spaces: 8, basePrice: 35 });
+    this.lot = new ParkingLot_1.ParkingLot(spaces, configs);
 });
 cucumber_1.Given(/^a normal car$/, function () {
     this.vehicle = new Car_1.Car(false);

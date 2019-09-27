@@ -86,7 +86,8 @@ Feature: Parking Lot Charges for Parking
     When the vehicle stays for 2 days
     Then the driver is charged $70
     And the lot is left with 42 spaces
-    
+ 
+  @wip   
   Scenario: 20% discount for 3 or more days
     Given a parking lot with 50 spaces
     And a bus
@@ -94,9 +95,24 @@ Feature: Parking Lot Charges for Parking
     Then the driver is charged $28.80
     And the lot is left with 48 spaces
 
+  @wip
   Scenario: 30% discount for 6 days or more
     Given a parking lot with 50 spaces
     And a normal car
     When the vehicle stays for 8 days
     Then the driver is charged $28
     And the lot is left with 49 spaces
+    
+  @wip
+  Scenario: Electric buses that stay 10 or more days pay $20 flat fee
+    Given a parking lot with 50 spaces
+    And an electric bus
+    When the vehicle stays for 11 days
+    Then the driver is charged $20
+
+  @wip
+  Scenario: Electric buses that stay a lot more time still pay $20 flat fee
+    Given a parking lot with 50 spaces
+    And an electric bus
+    When the vehicle stays for 15 days
+    Then the driver is charged $20
