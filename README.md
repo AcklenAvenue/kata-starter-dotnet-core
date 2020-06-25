@@ -7,9 +7,9 @@ Before the pairing session, we need you to do a few things:
 
 ### Prepare Your Machine
 
-1) Install Jetbrains Rider 2019.2.3 (free evaluation).
+1) Install Jetbrains Rider 2020.1 (free evaluation).
 
-2) Install Dotnet SDK 2.2.
+2) Install Dotnet SDK 3.1.
 
 3) In Rider, install the plugin "Machine Specifications Runner for Rider" (File > Settings > Plugins)
 
