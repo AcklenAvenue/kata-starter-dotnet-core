@@ -6,7 +6,7 @@ You have likely just received a request to join a "Pairing Session" with an engi
 
 1. Unless the programming language/technology was chosen by AA or HU, you should decide on a language in which you would like to do this pair session. We suggest you choose the language in which you feel most comfortable.
 1. Sign up for a free account at [GitPod](https://gitpod.io) which is an online IDE. If your chosen language is [not supported](https://www.gitpod.io/docs/languages-and-frameworks/) by GitPod, then please choose another language.
-1. Creat a new git repository at github or gitlab.
+1. Create a new git repository at github or gitlab.
 1. Access your git repository with GitPod
 1. Set up your project with...
   - separate sections for production code and unit tests.
