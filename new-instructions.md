@@ -5,13 +5,17 @@ You have likely just received a request to join a "Pairing Session" with an engi
 ## Instructions
 
 1. Unless the programming language/technology was chosen by AA or HU, you should decide on a language in which you would like to do this pair session. We suggest you choose the language in which you feel most comfortable.
-1. Sign up for a free account at [GitPod](https://gitpod.io) which is an online IDE. If your chosen language is [not supported](https://www.gitpod.io/docs/languages-and-frameworks/) by GitPod, then please choose another language.
-1. Create a new git repository at github or gitlab.
-1. Access your git repository with GitPod
-1. Set up your project with...
+2. Sign up for a free account at [GitPod](https://gitpod.io) which is an online IDE. If your chosen language is [not supported](https://www.gitpod.io/docs/languages-and-frameworks/) by GitPod, then please choose another language.
+3. Create a new git repository at github or gitlab.
+4. Access your git repository with GitPod
+5. Set up your project with...
   - separate sections for production code and unit tests.
   - a way to run the unit tests using some easy method
   - one failing unit test and one passing unit test to prove your test runner is working. Both unit tests should execute code from your production code section.
+
+## Starting the Pair Session
+
+You will need to start your workspace and share it using a special link with your evaluator. 
+
 1. In GitPod, go to Workspace > Share Running Workspace and copy the url.
-1. Send the workspace url to the person who sent you these instructions.
-1. Keep your workspace active until the date/time of the pairing session so that it can be used during the pairing session.
+2. Send the workspace url to your evaluator using email or meeting chat.
