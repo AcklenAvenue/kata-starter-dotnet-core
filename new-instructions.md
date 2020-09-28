@@ -2,7 +2,7 @@
 
 You have likely just received a request to join a "Pairing Session" with an engineer from Acklen Avenue or Hero Unit. These instructions are meant to help you set up your environment and get you ready for success in this next step in the vetting process.
 
-## Instructions
+## Before the Pair Session
 
 1. Unless the programming language/technology was chosen by AA or HU, you should decide on a language in which you would like to do this pair session. We suggest you choose the language in which you feel most comfortable.
 2. Sign up for a free account at [GitPod](https://gitpod.io) which is an online IDE. If your chosen language is [not supported](https://www.gitpod.io/docs/languages-and-frameworks/) by GitPod, then please choose another language.
