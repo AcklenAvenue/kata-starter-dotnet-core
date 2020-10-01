@@ -12,6 +12,7 @@ You have likely just received a request to join a "Pairing Session" with an engi
   - separate sections for production code and unit tests.
   - a way to run the unit tests using some easy method
   - one failing unit test and one passing unit test to prove your test runner is working. Both unit tests should execute code from your production code section.
+  - Enable auto-save so that all viewers can see updates in almost-real-time.
 
 ## Starting the Pair Session
 
