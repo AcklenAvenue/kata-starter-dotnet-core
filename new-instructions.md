@@ -13,10 +13,5 @@ You have likely just received a request to join a "Pairing Session" with an engi
   - a way to run the unit tests using some easy method
   - one failing unit test and one passing unit test to prove your test runner is working. Both unit tests should execute code from your production code section.
   - Enable auto-save so that all viewers can see updates in almost-real-time.
-
-## Starting the Pair Session
-
-You will need to start your workspace and share it using a special link with your evaluator. 
-
-1. In GitPod, go to Workspace > Share Running Workspace and copy the url.
-2. Send the workspace url to your evaluator using email or meeting chat.
+6. In GitPod, go to Workspace > Share Running Workspace and copy the url.
+7. Send the workspace url to us by replying to the last email at least 24 hours before the scheduled Pairing Session.
