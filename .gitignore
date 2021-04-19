@@ -10,3 +10,5 @@ _ReSharper*/
 *.DotSettings.*
 [Tt]est[Rr]esult*
 .idea/
+
+node_modules

@@ -1,5 +1,7 @@
-image: gitpod/workspace-full
-
+image: gitpod/workspace-dotnet
 tasks:
   - init: dotnet restore
     command: dotnet run
+
+
+
